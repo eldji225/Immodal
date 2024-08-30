@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+    --primary-color: #FF0000;
+    --secondary-color: #3CAA5F;
+    --accent-color: #FFC914;
+    --text-color: #2D3A3A;
+    --background-color: #F9F9F9;
+    --header-bg: #FF0000;
+    --footer-bg: #2D3A3A;
+    --button-hover-color: #2A7F45;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--header-bg);
+    color: white;
+    text-align: center;
+    padding: 2em 1em;
+    position: relative;
+    background-image: url('fouta-djallon-pattern.svg');
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+h1 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.countdown {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 1em;
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 0.5em 1em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.countdown-value {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    color: var(--primary-color);
+}
+
+.countdown-label {
+    font-size: clamp(0.6rem, 1.5vw, 0.8rem);
+    text-transform: uppercase;
+}
+
+.ad-banner {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 1em;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ad-banner img {
+    max-height: 80px;
+    object-fit: contain;
+    margin: 0.5em;
+    border-radius: 8px;
+   
